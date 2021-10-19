@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#MobileManufactures{
+  padding-left: 20px;
+}
+#MobileManufactures li {
+  list-style:none ;
+}
+
+#MobileManufactures li:nth-child(n):before {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+#MobileManufactures li:nth-child(1):before {content: "\2BC0";}
+#MobileManufactures li:nth-child(2):before {content: "\2BC0";}
+#MobileManufactures li:nth-child(3):before {content: "\25CF";font-size: 20px;}
+#MobileManufactures li:nth-child(4):before {content: "\25CB"; font-size: 14px;}
