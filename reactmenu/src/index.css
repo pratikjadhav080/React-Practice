@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+#allButtons{
+  width:20%;
+  margin:auto;
+  margin-top:100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  color:White;
+  border:none;
+  border-radius: 50px;
+  width:140px;
+  padding:8px;
+  margin:10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#JoinUs{
+  background-color: rgb(0, 183, 255);
+}
+
+#Settings{
+  background-color: rgb(131, 141, 145);
+}
+
+#Login{
+  background-color: rgb(255, 123, 0);
+}
+
+#Contact{
+  background-color: rgb(145, 24, 9);
+}
+
+#Search{
+  background-color: rgb(164, 211, 55);
+}
+
+#Help{
+  background-color: rgb(118, 48, 199);
+}
+
+#Home{
+  background-color: rgb(201, 21, 171);
+}
+
+#Download{
+  background-color: rgb(146, 145, 71);
+}
