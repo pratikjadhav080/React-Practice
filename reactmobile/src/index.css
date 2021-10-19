@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+#maindiv{
+  width:50%;
+  margin:auto;
+}
+
 #MobileManufactures{
   padding-left: 20px;
 }
