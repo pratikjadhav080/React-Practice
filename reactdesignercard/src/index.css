@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body{
+  font-family: 'Libre Baskerville', serif;
+  margin:0px;
+  padding:0px;
+  background:black;
+}
+
+#maindiv{
+  background-color: rgb(235, 229, 229);
+  width:90%;
+  margin:auto;
+  display:flex;
+}
+
+#maindiv>div{
+  width:30%;
+  border-radius: 20px;
+  margin:30px;
+  background-color: white;
+}
+
+#maindiv img{
+  width:100%;
+  border-radius: 20px 20px 0px 0px;
+  height:280px;
+}
+
+#dishdetails{
+  margin: 25px;
+}
+
+#dishdetails>div:nth-child(1),#dishdetails>div:nth-child(3),#dishdetails>div:nth-child(4){
+  display: flex;
+}
+
+#dishdetails>p:nth-child(2){
+  font-size: 19px;
+  color:grey;
+}
+
+#dishdetails>div:nth-child(3) p{
+  font-size: 19px;
+  color:rgb(196, 188, 188);
+  font-weight: 600;
+  margin-right:59px;
+}
+
+#dishdetails>div:nth-child(3) p:nth-child(3){
+  margin-right:0px;
+}
+
+#btn{
+  background-color: rgb(83, 189, 118);
+  color:white;
+  font-size: 15px;
+  border:none;
+  width:150px;
+  height:60px;
+  margin-top:12px;
+  font-weight: 700;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+#price{
+  font-size: 30px;
+  margin-right:25px;
+}
+
+#notprice{
+  color:rgb(255, 81, 0);
+  font-size: 20px;
+  padding-top: 12px;
+  margin-right:65px;
+}
+
+#dishname{
+  font-size: 25px;
+}
+
+#symbols{
+  margin-top:8px;
+  margin-left:120px;
+  width:10%;
+  display:flex;
+}
+#symbols img{
+  height:40px;
+}
