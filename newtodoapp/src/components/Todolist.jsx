@@ -1,6 +1,6 @@
 
 
-export const Todolist = ({ passlist, toggle, deleteTask }) => {
+export const Todolist = ({ passlist, toggle, deleteTask,attr }) => {
 
     const handletoggle = (id) => {
         toggle(id)
@@ -12,7 +12,7 @@ export const Todolist = ({ passlist, toggle, deleteTask }) => {
 
     return <>
         {passlist.map((e) => (
-            <div key={e.id} id="todotasks">
+            <div key={e.id} id={attr}>
                 <div>
                     <p>{e.status ? <strike>{e.title}</strike> : e.title}</p>
                 </div>

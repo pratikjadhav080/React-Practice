@@ -35,9 +35,9 @@ export const Todo = () => {
 
     return <div id="todo">
         <Todoitem prop={handlelist} />
-        <Todolist passlist={flag ? list.filter(e => !e.status) : list} toggle={handletoggle} deleteTask={handleDelete} />
+        <Todolist passlist={flag ? list.filter(e => !e.status) : list} toggle={handletoggle} deleteTask={handleDelete} attr="todotasks" />
         <hr/>
         <button id="buttonShow" onClick={() => setFlag(!flag)}> {flag ? "Show All" : "Show Completed TO-DOs"}</button>
-        <Todolist passlist={flag ? list.filter(e => e.status) : []} toggle={handletoggle} deleteTask={handleDelete} />
+        <Todolist passlist={flag ? list.filter(e => e.status) : []} toggle={handletoggle} deleteTask={handleDelete} attr="completedtodotasks"/>
     </div>
 }
