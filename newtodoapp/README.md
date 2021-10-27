@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
-# Live Demo - [TO DO APP](./public/todo.png)
+# Live Demo - [TO DO APP](https://admiring-swanson-613dae.netlify.app/)
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](./public/todo.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
