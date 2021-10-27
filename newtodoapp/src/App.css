@@ -52,7 +52,7 @@ body{
 #todoinput input {
   margin:5px 5px 5px 5px;
   background-color: rgba(243, 239, 239, 0.9);
-  width:88%;
+  width:100%;
   height:50px;
   outline: none;
   border-radius:3px;
@@ -107,6 +107,7 @@ body{
   width:80%;
   text-align: left;
 }
+
 #todotasks>div:nth-child(2),#completedtodotasks>div:nth-child(2){
   width:20%;
   height:100px;
@@ -163,6 +164,64 @@ body{
 hr{
   border:1px solid rgb(138, 201, 238);
 }
+
+@media only screen and (max-width: 700px) {
+  #todotasks>div:nth-child(1),#completedtodotasks>div:nth-child(1){
+    width:65%;
+  }
+
+  #decisions{
+    display: flex;
+  }
+
+  #todotasks button, #completedtodotasks button{
+    height:10px;
+    width:10px;
+  }
+
+  #todotasks input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+  }
+
+  #todotasks,#completedtodotasks{
+    width:88%;
+  }
+  
+}
+
+
+@media only screen and (max-width: 1000px) {
+  #todotasks>div:nth-child(1),#completedtodotasks>div:nth-child(1){
+    width:65%;
+  }
+
+  #decisions{
+    display: flex;
+  }
+
+  #todotasks button, #completedtodotasks button{
+    height:10px;
+    width:10px;
+  }
+
+  #todotasks input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+  }
+
+  #todotasks,#completedtodotasks{
+    width:88%;
+  }
+  
+}
+
+
+
 
 
 @keyframes App-logo-spin {

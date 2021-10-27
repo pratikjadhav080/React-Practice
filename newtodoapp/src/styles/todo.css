@@ -1,3 +1,4 @@
+
 #buttonShow{
     width:50%;
     color: white;
@@ -8,6 +9,7 @@
     padding: 10px;
     cursor: pointer;
     transition: all 0.6s ease;
+
 }
 
 #buttonShow:hover{
@@ -18,3 +20,67 @@
     color:blue;
     transform: translateY(10px)
 }
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 700px) {
+    #buttonShow {
+        visibility: hidden;
+    }
+    #buttonShow:after{
+        content: 'Show';
+        visibility:visible;
+        color: white;
+        background-color: rgb(18, 114, 192);
+        font-size: 20px;
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+        height:200px;
+        cursor: pointer;
+        transition: all 0.6s ease;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 1000px) {
+
+    #buttonShow {
+        visibility: hidden;
+    }
+
+    #buttonShow:after{
+        content: 'Show';
+        visibility:visible;
+        color: white;
+        background-color: rgb(18, 114, 192);
+        font-size: 20px;
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+        height:200px;
+        cursor: pointer;
+        transition: all 0.6s ease;
+    }
+
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  } */
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  }  */
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  }  */
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  /* @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  } */
