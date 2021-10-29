@@ -1,5 +1,5 @@
 
-#buttonShow{
+#buttonShow,#prevShow,#nextShow,#pagenumber{
     width:50%;
     color: white;
     background-color: rgb(18, 114, 192);
@@ -7,18 +7,32 @@
     border: none;
     border-radius: 3px;
     padding: 10px;
-    cursor: pointer;
     transition: all 0.6s ease;
-
 }
 
-#buttonShow:hover{
+#prevShow,#nextShow,#pagenumber{
+  width:20%;
+  margin:30px 10px 0px 10px;
+}
+
+#buttonShow:hover,#prevShow:hover,#nextShow:hover{
+  cursor: pointer;
     background-color: rgb(6, 50, 87)
 }
 
-#buttonShow:active{
+#buttonShow:active,#prevShow:active,#nextShow:active{
     color:blue;
     transform: translateY(10px)
+}
+
+#navigators{
+  display: flex;
+  justify-content: center;
+}
+
+#pagenumber{
+  background-color: rgba(16, 75, 95, 0.7);
+  color:rgba(243, 239, 239, 0.9);
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -64,23 +78,3 @@
     }
 
   }
-
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  /* @media only screen and (min-width: 600px) {
-    .example {background: green;}
-  } */
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  /* @media only screen and (min-width: 768px) {
-    .example {background: blue;}
-  }  */
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  /* @media only screen and (min-width: 992px) {
-    .example {background: orange;}
-  }  */
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  /* @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
-  } */
