@@ -2,23 +2,28 @@
   "todos": [
     {
       "title": "learn react",
-      "status": false,
+      "status": true,
       "id": 1
     },
     {
       "title": "have breakfast",
-      "status": true,
+      "status": false,
       "id": 3
     },
     {
       "title": "add movie",
-      "status": false,
+      "status": true,
       "id": 4
     },
     {
       "title": "watch",
       "status": true,
       "id": 5
+    },
+    {
+      "title": "talk",
+      "status": false,
+      "id": 9
     }
   ]
 }
