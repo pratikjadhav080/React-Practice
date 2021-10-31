@@ -16,7 +16,7 @@ export function Counter({prop,endtime,stopcount,resumecount}) {
                 console.log(prev)
                 if(prev===endtime){
                     clearInterval(id)
-                    return 0;
+                    return 17;
                 }
                 return prev+1;
             })
