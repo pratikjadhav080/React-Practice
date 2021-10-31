@@ -1,29 +1,48 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
-// import { Counter } from './components/Counter';
-import { TODO } from './components/Todo';
+import { Counter } from './components/Counter';
+
 
 function App() {
 
-  // const [show,setShow] = useState(true)
-  // const [local,setLocal] = useState(0)
+  const [show,setShow] = useState(true)
+  const [stop,setStop] = useState(false)
+  const [local,setLocal] = useState(0)
+  const [resume,setResume] = useState(false)
 
-  // const handlecounter= () =>{
-  //   if(!show){
+  const handlecounter= () =>{
+    if(!show){
 
-  //     // console.log(localStorage.getItem('count'))
-  //     setLocal(Number(localStorage.getItem('count')))
+      setLocal(Number(localStorage.getItem('count')))
       
-  //   }
-  //   setShow(!show)
-  // }
+    }
+    setShow(!show)
+  }
+
+  const stopcounter= () =>{
+    setStop(!stop)
+    setResume(false)
+  }
+
+  const resumecounter= () =>{
+    setStop(!stop)
+    setResume(!resume)
+  }
   
-  return <div>
+  
+  const resetcounter= () =>{
+    window.location.reload(false);
+  }
+  
 
-    {/* {show?<Counter prop={local?local:37}/>:<div></div>}
-    <button onClick={handlecounter}>{show?"Hide":"Show"}</button> */}
+  return <div className="App">
 
-    <TODO/>
+    {show?<Counter resumecount={resume} stopcount={stop} endtime={50} prop={local?local:17}/>:<div></div>}
+    <button onClick={handlecounter}>{show?"Hide":"Show"}</button>
+    <button onClick={resetcounter}>Reset</button>
+    <button disabled={stop} onClick={stopcounter}>Stop</button>
+    <button disabled={resume} onClick={resumecounter}>Resume</button>
+
   </div>
 }
 
