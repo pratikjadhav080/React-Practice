@@ -12,11 +12,11 @@
 #modal-info {
   background-color: #fff;
   margin: 20% auto;
-  padding: 20px 20px 20px 35px;
+  padding: 30px 20px 20px 35px;
   width: 50%;
   margin: 100px auto;
   border: 1px solid rgb(201, 201, 201);
-  
+  border-radius: 10px;
 }
 
 #closeBtn {
@@ -47,7 +47,7 @@
 }
 
 .inputfields{
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 20px 0px;
 }
 
 .inputfields input{
@@ -67,7 +67,7 @@
 
 #paymentmethod{
   font-size: 20px;
-  margin:20px 0px 15px 0px;
+  margin:20px 0px 20px 0px;
 }
 
 #paymentdiv{
@@ -92,5 +92,6 @@ input[type=checkbox]{
   padding:10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  margin:20px 0px 40px 0px;
   transition: all 0.1s ease-in;
 }
