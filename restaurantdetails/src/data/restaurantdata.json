@@ -1,330 +1,322 @@
-[
-    {
-        "votes": 580,
-        "reviews": 808,
-        "costforone": 543,
-        "costfortwo": 1486,
-        "ratings": 4.7,
-        "categories": [
-            "Pizza",
-            "Asian"
-        ],
-        "paymentmethods": {
-            "card": true
-        },
-        "name": "Indian Lovegrass",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIns1W0AO6zd1PCuS7W89x41iSZh7KBEbsg&usqp=CAU"
+[{
+    "title": "Paneer Pizza",
+    "payment_methods": {
+        "card": true,
+        "cash": true,
+        "upi": true
     },
-    {
-        "votes": 403,
-        "reviews": 673,
-        "costforone": 650,
-        "costfortwo": 1176,
-        "ratings": 2.6,
-        "categories": [
-            "Asian",
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "cash": true
-        },
-        "name": "Great Dish",
-        "image_url": "https://thumbor.thedailymeal.com/DxG4-ZdHTj_DSPUf7d7vPHJz2Cc=/870x565/filters:focal(500x375:501x376)/https://www.thedailymeal.com/sites/default/files/slideshows/copy/redfish_0.jpg"
+    "cost_for_one": 50,
+    "total_votes": 766,
+    "reviews": 512,
+    "categories": ["Continental", "Pizza", "Asian"],
+    "image": "https://b.zmtcdn.com/data/dish_photos/65a/188217fdaf81dcdb6955e0699f6d965a.jpg",
+    "stars": 4.3,
+    "cost_for_two": 100,
+    "time": 30
+},
+{
+    "title": "Kadhai Paneer",
+    "payment_methods": {
+        "card": true,
+        "cash": false,
+        "upi": true
     },
-    {
-        "votes": 381,
-        "reviews": 836,
-        "costforone": 466,
-        "costfortwo": 1062,
-        "ratings": 4.5,
-        "categories": [
-            "Continental",
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "card": true,
-            "cash": true,
-            "upi": true
-        },
-        "name": "Dark Yellow",
-        "image_url": "https://static3.bigstockphoto.com/0/4/3/large1500/340816762.jpg"
+    "cost_for_one": 100,
+    "total_votes": 590,
+    "reviews": 342,
+    "categories": ["Paneer", "Indian"],
+    "image": "https://b.zmtcdn.com/data/dish_photos/bfa/ab811920e60fe6ef1bb3a7e7d0451bfa.jpg",
+    "stars": 4.9,
+    "cost_for_two": 170,
+    "time": 32
+},
+{
+    "title": "Cold coffee",
+    "payment_methods": {
+        "card": true,
+        "cash": true,
+        "upi": true
     },
-    {
-        "votes": 2,
-        "reviews": 852,
-        "costforone": 245,
-        "costfortwo": 1275,
-        "ratings": 3.7,
-        "categories": [
-            "Continental",
-            "Pizza",
-            "Asian"
-        ],
-        "paymentmethods": {
-            "card": true,
-            "cash": true,
-            "upi": true
-        },
-        "name": "Clove Phlox",
-        "image_url": "https://robbreport.com/wp-content/uploads/2020/12/grilled-dorade-vernick-fish.jpg?w=1000"
+    "cost_for_one": 100,
+    "total_votes": 766,
+    "reviews": 512,
+    "categories": ["Beverages", "Desserts"],
+    "image": "https://b.zmtcdn.com/data/pictures/9/19318249/2dc5cea87fdf61e8e8aac89da2acffd6_o2_featured_v2.jpg",
+    "stars": 3.3,
+    "cost_for_two": 200,
+    "time": 25
+},
+{
+    "title": "Paneer Tikka",
+    "payment_methods": {
+        "card": false,
+        "cash": true,
+        "upi": false
     },
-    {
-        "votes": 954,
-        "reviews": 240,
-        "costforone": 910,
-        "costfortwo": 1920,
-        "ratings": 4.1,
-        "categories": [
-            "Continental",
-            "Asian",
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "card": true
-        },
-        "name": "Crab",
-        "image_url": "https://www.thespruceeats.com/thmb/kcE38dQZAwpFrG08grcNYGYztbQ=/960x639/filters:fill(auto,1)/BakedStuffedLobster-TheSpruce_DianaChistruga-3fcb6301491a4be193ecf40d0735e8d1.jpg"
+    "cost_for_one": 160,
+    "total_votes": 676,
+    "reviews": 212,
+    "categories": ["Chinese", "Italian"],
+    "image": "https://b.zmtcdn.com/data/dish_photos/720/985aaaae9f65e957ee2df83c3713a720.jpg",
+    "stars": 3.8,
+    "cost_for_two": 300,
+    "time": 40
+},
+{
+    "title": "White Sauce Pasta",
+    "payment_methods": {
+        "card": true,
+        "cash": false,
+        "upi": false
     },
-    {
-        "votes": 137,
-        "reviews": 48,
-        "costforone": 602,
-        "costfortwo": 1886,
-        "ratings": 4.0,
-        "categories": [
-            "Asian"
-        ],
-        "paymentmethods": {
-            "cash": true
-        },
-        "name": "Douglas' Thistle",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKlcnk3J6i5B0KU1osqEY2jsH0758x_e-8Aw&usqp=CAU"
+    "cost_for_one": 100,
+    "total_votes": 475,
+    "reviews": 314,
+    "categories": ["Pasta", "Italian"],
+    "image": "https://b.zmtcdn.com/data/pictures/1/19660581/bc8a6c63aa0fb0423eb5dcf80d248238_o2_featured_v2.jpg",
+    "stars": 4.0,
+    "cost_for_two": 150,
+    "time": 20
+},
+{
+    "title": "Manchurian",
+    "payment_methods": {
+        "card": false,
+        "cash": true,
+        "upi": true
     },
-    {
-        "votes": 439,
-        "reviews": 772,
-        "costforone": 729,
-        "costfortwo": 1222,
-        "ratings": 3.4,
-        "categories": [
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "card": true
-        },
-        "name": "Coastal Stonecrop",
-        "image_url": "https://i.pinimg.com/736x/95/3b/2d/953b2d6ddaf8bacc77f53946586a26b1.jpg"
+    "cost_for_one": 150,
+    "total_votes": 175,
+    "reviews": 124,
+    "categories": ["Fast Food", "Chinese"],
+    "image": "https://b.zmtcdn.com/data/pictures/8/19502698/50c07263e86025bb6eb4cdc7914b85ef_o2_featured_v2.jpg",
+    "stars": 4.3,
+    "cost_for_two": 270,
+    "time": 30
+},
+{
+    "title": "Singapori Noodles",
+    "payment_methods": {
+        "card": false,
+        "cash": true,
+        "upi": true
     },
-    {
-        "votes": 554,
-        "reviews": 711,
-        "costforone": 741,
-        "costfortwo": 1201,
-        "ratings": 2.3,
-        "categories": [
-            "Continental"
-        ],
-        "paymentmethods": {
-            "cash": true
-        },
-        "name": "California Saxifrage",
-        "image_url": "https://www.thedailymeal.com/sites/default/files/2018/11/19/20-tetrazzini.JPG"
+    "cost_for_one": 200,
+    "total_votes": 275,
+    "reviews": 674,
+    "categories": ["Chinese", "Noodles"],
+    "image": "https://b.zmtcdn.com/data/pictures/2/19595762/623ebe42751301d8ac83ded782e9d31d_o2_featured_v2.jpg",
+    "stars": 2.9,
+    "cost_for_two": 350,
+    "time": 35
+},
+{
+    "title": "Fried Rice",
+    "payment_methods": {
+        "card": true,
+        "cash": true,
+        "upi": false
     },
-    {
-        "votes": 809,
-        "reviews": 325,
-        "costforone": 688,
-        "costfortwo": 848,
-        "ratings": 3.6,
-        "categories": [
-            "Pizza"
-        ],
-        "paymentmethods": {
-            "card": true
-        },
-        "name": "Rome Hawthorn",
-        "image_url": "https://www.cvent.com/sites/default/files/styles/focus_scale_and_crop_800x450/public/migrated_attachments/meal-918638_1280-1.jpg?itok=dMJGxEC2"
+    "cost_for_one": 70,
+    "total_votes": 789,
+    "reviews": 900,
+    "categories": ["Chinese", "Rice", "Continental"],
+    "image": "https://b.zmtcdn.com/data/pictures/3/19410103/005c241bd3ee8f22bfc5e177f835de63_o2_featured_v2.jpg",
+    "stars": 3.8,
+    "cost_for_two": 150,
+    "time": 40
+},
+{
+    "title": "Burger",
+    "payment_methods": {
+        "card": false,
+        "cash": true,
+        "upi": false
     },
-    {
-        "votes": 234,
-        "reviews": 850,
-        "costforone": 267,
-        "costfortwo": 1678,
-        "ratings": 4.2,
-        "categories": [
-            "Continental"
-        ],
-        "paymentmethods": {
-            "cash": true
-        },
-        "name": "Shortstem Beardtongue",
-        "image_url": "https://robbreport.com/wp-content/uploads/2018/12/Duck-Ssam-1.jpg?w=1000"
+    "cost_for_one": 100,
+    "total_votes": 580,
+    "reviews": 470,
+    "categories": ["Pizza", "Burger"],
+    "image": "https://b.zmtcdn.com/data/pictures/2/19934272/85569623580b37ffc4058f0c1a5fdcd8_o2_featured_v2.jpg",
+    "stars": 3.3,
+    "cost_for_two": 200,
+    "time": 20
+},
+{
+    "title": "Motichhor Laddu",
+    "payment_methods": {
+        "card": true,
+        "cash": true,
+        "upi": true
     },
-    {
-        "votes": 668,
-        "reviews": 79,
-        "costforone": 884,
-        "costfortwo": 1770,
-        "ratings": 3.3,
-        "categories": [
-            "Asian",
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "card": true
-        },
-        "name": "Runyon's Beehive Cactus",
-        "image_url": "https://andershusa.com/wp-content/uploads/2017/12/best-dishes-of-2017-restaurants-food-foodie-eat-eating-dine-dining-gastronomy-best-tips-recommendation-guide-travel-2017-31.jpg"
+    "cost_for_one": 150,
+    "total_votes": 170,
+    "reviews": 475,
+    "categories": ["Indian", "Desserts", "Mithai"],
+    "image": "https://b.zmtcdn.com/data/pictures/2/19873292/c2edcf5cee7a602d2404bb319aeaf55d_o2_featured_v2.jpg",
+    "stars": 4.9,
+    "cost_for_two": 300,
+    "time": 45
+},
+{
+    "title": "Soya Chaap",
+    "payment_methods": {
+        "card": false,
+        "cash": false,
+        "upi": true
     },
-    {
-        "votes": 548,
-        "reviews": 727,
-        "costforone": 946,
-        "costfortwo": 800,
-        "ratings": 4.6,
-        "categories": [
-            "Continental",
-            "Asian"
-        ],
-        "paymentmethods": {
-            "cash": true
-        },
-        "name": "West Indian Sage",
-        "image_url": "https://www.elitetraveler.com/wp-content/uploads/2017/12/alinea-3648-steelhead-trout-roe.jpg"
+    "cost_for_one": 130,
+    "total_votes": 190,
+    "reviews": 193,
+    "categories": ["Afgan", "Fast Food"],
+    "image": "https://b.zmtcdn.com/data/pictures/8/19054108/91ba25a531b2cd78bd1c1dd0ead4ca17_o2_featured_v2.jpg",
+    "stars": 4.1,
+    "cost_for_two": 230,
+    "time": 30
+},
+{
+    "title": "Motichhor Laddu 2",
+    "payment_methods": {
+        "card": true,
+        "cash": false,
+        "upi": true
     },
-    {
-        "votes": 84,
-        "reviews": 591,
-        "costforone": 899,
-        "costfortwo": 1826,
-        "ratings": 4.6,
-        "categories": [
-            "Pizza",
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "card": true,
-            "cash": true
-        },
-        "name": "Dense Bladderpod",
-        "image_url": "https://media-cdn.tripadvisor.com/media/photo-s/07/77/7e/67/rabbit-main-course.jpg"
+    "cost_for_one": 50,
+    "total_votes": 120,
+    "reviews": 295,
+    "categories": ["Fast Food", "Chinese"],
+    "image": "https://b.zmtcdn.com/data/dish_photos/cdb/109428244250581a15acb709096b6cdb.jpg",
+    "stars": 3.8,
+    "cost_for_two": 100,
+    "time": 20
+},
+{
+    "title": "Chilli Potato",
+    "payment_methods": {
+        "card": true,
+        "cash": true,
+        "upi": false
     },
-    {
-        "votes": 554,
-        "reviews": 423,
-        "costforone": 832,
-        "costfortwo": 578,
-        "ratings": 1.3,
-        "categories": [
-            "Continental",
-            "Asian"
-        ],
-        "paymentmethods": {
-            "card": true
-        },
-        "name": "Gulf Coast Spikerush",
-        "image_url": "https://st3.depositphotos.com/12995068/37145/i/950/depositphotos_371452118-stock-photo-traditional-nicoise-food-selection-mix.jpg"
+    "cost_for_one": 90,
+    "total_votes": 850,
+    "reviews": 985,
+    "categories": ["Fast Food", "Chinese", "Momos"],
+    "image": "https://b.zmtcdn.com/data/pictures/0/19632460/26dc67e4448507910524c4e633bbee96_o2_featured_v2.jpg",
+    "stars": 2.8,
+    "cost_for_two": 180,
+    "time": 30
+},
+{
+    "title": "Kaju Katli",
+    "payment_methods": {
+        "card": false,
+        "cash": true,
+        "upi": true
     },
-    {
-        "votes": 298,
-        "reviews": 419,
-        "costforone": 774,
-        "costfortwo": 1547,
-        "ratings": 1.2,
-        "categories": [
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "cash": true
-        },
-        "name": "Nodding Rockcress",
-        "image_url": "https://robbreport.com/wp-content/uploads/2020/12/pan-roasted-brioche-auburn.jpg?w=1000"
+    "cost_for_one": 200,
+    "total_votes": 560,
+    "reviews": 380,
+    "categories": ["Mithai", "Indian", "Desserts"],
+    "image": "https://b.zmtcdn.com/data/pictures/9/19043449/7a38afaa2e20ff1828af0d186cb17ed0_o2_featured_v2.jpg",
+    "stars": 3.7,
+    "cost_for_two": 380,
+    "time": 30
+},
+{
+    "title": "Aloo Parantha",
+    "payment_methods": {
+        "card": true,
+        "cash": false,
+        "upi": false
     },
-    {
-        "votes": 925,
-        "reviews": 438,
-        "costforone": 373,
-        "costfortwo": 1956,
-        "ratings": 4.0,
-        "categories": [
-            "Continental"
-        ],
-        "paymentmethods": {
-            "card": true,
-            "cash": true,
-            "upi": true
-        },
-        "name": "Robust Cane",
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSki8KqCbYpE6jFz0ZuFsP3YHy-AGS3SoDyxQ&usqp=CAU"
+    "cost_for_one": 40,
+    "total_votes": 567,
+    "reviews": 980,
+    "categories": ["Indian", "Continental"],
+    "image": "https://b.zmtcdn.com/data/dish_photos/a78/0a2c77d44500ec755fba45e3f61dea78.jpg",
+    "stars": 4.7,
+    "cost_for_two": 80,
+    "time": 30
+},
+{
+    "title": "Garlic Parantha",
+    "payment_methods": {
+        "card": false,
+        "cash": true,
+        "upi": false
     },
-    {
-        "votes": 946,
-        "reviews": 978,
-        "costforone": 336,
-        "costfortwo": 916,
-        "ratings": 3.3,
-        "categories": [
-            "Continental",
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "cash": true,
-            "upi": true
-        },
-        "name": "Snakeroot",
-        "image_url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/10/4/1/FN_chain-restaurant-entrees_California-Pizza-Kitchen_Original-BBQ-Chicken-Pizza_s6x4.jpg.rend.hgtvcom.441.294.suffix/1538685779002.jpeg"
+    "cost_for_one": 70,
+    "total_votes": 600,
+    "reviews": 900,
+    "categories": ["Indian", "Continental"],
+    "image": "https://static.toiimg.com/thumb/53319173.cms?imgsize=189802&width=800&height=800",
+    "stars": 4,
+    "cost_for_two": 140,
+    "time": 40
+},
+{
+    "title": "Gulab Jamun",
+    "payment_methods": {
+        "card": true,
+        "cash": true,
+        "upi": false
     },
-    {
-        "votes": 958,
-        "reviews": 225,
-        "costforone": 500,
-        "costfortwo": 539,
-        "ratings": 4.6,
-        "categories": [
-            "Continental",
-            "Asian"
-        ],
-        "paymentmethods": {
-            "cash": true
-        },
-        "name": "Arctic Bentgrass",
-        "image_url": "https://static3.bigstockphoto.com/0/4/3/large1500/340816738.jpg"
+    "cost_for_one": 30,
+    "total_votes": 700,
+    "reviews": 1000,
+    "categories": ["Mithai","Indian", "Continental"],
+    "image": "https://static.toiimg.com/thumb/63799510.cms?imgsize=1091643&width=800&height=800",
+    "stars": 5,
+    "cost_for_two": 60,
+    "time": 20
+},
+{
+    "title": "Sichuan Pork",
+    "payment_methods": {
+        "card": true,
+        "cash": false,
+        "upi": true
     },
-    {
-        "votes": 221,
-        "reviews": 862,
-        "costforone": 794,
-        "costfortwo": 563,
-        "ratings": 1.5,
-        "categories": [
-            "Continental",
-            "Asian",
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "card": true
-        },
-        "name": "Dot Lichen",
-        "image_url": "https://robbreport.com/wp-content/uploads/2020/12/manti-dumplings-albi-dc.jpg?w=1000"
+    "cost_for_one": 90,
+    "total_votes": 900,
+    "reviews": 700,
+    "categories": ["Fast Food", "Chinese"],
+    "image": "https://images.chinahighlights.com/allpicture/2019/11/7b3afb974d7946bbbe397f7c_894x670.jpg",
+    "stars": 4.8,
+    "cost_for_two": 180,
+    "time": 30
+},
+{
+    "title": "Expresso",
+    "payment_methods": {
+        "card": true,
+        "cash": false,
+        "upi": false
     },
-    {
-        "votes": 853,
-        "reviews": 26,
-        "costforone": 320,
-        "costfortwo": 1125,
-        "ratings": 1.8,
-        "categories": [
-            "Continental",
-            "Pizza",
-            "Asian",
-            "Desserts"
-        ],
-        "paymentmethods": {
-            "card": true,
-            "cash": true,
-            "upi": true
-        },
-        "name": "Snapdragon Penstemon",
-        "image_url": "https://previews.123rf.com/images/enigmaart/enigmaart2003/enigmaart200300232/143646216-tasty-healthy-food-beautiful-restaurant-serving-different-dishes-.jpg"
-    }
+    "cost_for_one": 40,
+    "total_votes": 866,
+    "reviews": 600,
+    "categories": ["Beverages", "Desserts"],
+    "image": "https://getproofed.com/wp-content/uploads/2019/10/coffee-3107235_640.jpg",
+    "stars": 4.5,
+    "cost_for_two": 80,
+    "time": 10
+},
+{
+    "title": "Creamy Tomato Pasta",
+    "payment_methods": {
+        "card": true,
+        "cash": true,
+        "upi": false
+    },
+    "cost_for_one": 80,
+    "total_votes": 786,
+    "reviews": 877,
+    "categories": ["Pasta", "Italian"],
+    "image": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2Farchive%2F0eb929bc2c007ebf6009316a327b1e37587045a4",
+    "stars": 5.0,
+    "cost_for_two": 160,
+    "time": 30
+}
+
 ]
