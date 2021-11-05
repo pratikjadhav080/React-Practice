@@ -5,6 +5,7 @@ import { Transaction } from "./Transactiontype";
 const data = require('../data/restaurantdata.json');
 
 export const Restaurant = () => {
+    
     const [dish, setDish] = useState(data)
 
     const dishList = dish.map((e) => {
@@ -30,8 +31,12 @@ export const Restaurant = () => {
                     <p className="votes">{e.reviews} reviews</p>
                 </div>
 
-                <div id="orderdiv">
-                    <button id="orderbtn">Order Online</button>
+                <div>
+                    <button id="orderbtn" disabled>Order Online</button>
+                </div>
+
+                <div>
+                    <button id="favbtn">Add to favourite</button>
                 </div>
 
             </div>

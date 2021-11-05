@@ -1,0 +1,29 @@
+#decisionscontainer button{
+    background-color: rgb(224, 218, 218);
+    color:rgb(35, 89, 207);
+    font-size: 18px;
+    width:70%;
+    border:none;
+    padding:10px;
+    margin:10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+#startrating,#transaction,#sorting{
+    margin:20px 0px 20px 0px;
+}
+#decisions{
+    margin-left: 10px;
+    color:rgb(153, 145, 28)
+}
+
+#decisionscontainer button:active{
+    background-color: rgb(165, 171, 182);
+}
+
+#newrestau{
+    background-color: rgb(18, 85, 105);
+}
+
