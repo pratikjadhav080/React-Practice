@@ -12,10 +12,11 @@
 #modal-info {
   background-color: #fff;
   margin: 20% auto;
-  padding: 20px;
-  width: 40%;
+  padding: 20px 20px 20px 35px;
+  width: 50%;
   margin: 100px auto;
   border: 1px solid rgb(201, 201, 201);
+  
 }
 
 #closeBtn {
@@ -33,6 +34,63 @@
 
 #modal-div {
   width: 100%;
-  display: grid;
-  grid-template-columns: 40% 60%;
+}
+
+#heading{
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#formdata label{
+  font-size: 20px;
+  margin-bottom:10px;
+}
+
+.inputfields{
+  margin: 10px 0px 10px 0px;
+}
+
+.inputfields input{
+  margin-top:5px;
+  width:90%;
+  padding:15px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.inputfields input:focus{
+  outline: none;
+  background-color: rgba(148, 190, 230, 0.3);
+}
+
+#paymentmethod{
+  font-size: 20px;
+  margin:20px 0px 15px 0px;
+}
+
+#paymentdiv{
+  margin-bottom: 20px;
+}
+
+#paymentdiv label{
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+input[type=checkbox]{
+    transform: scale(2.5);
+    margin-left: 15px;
+}
+
+#inputbtn{
+  background-color: rgb(224, 218, 218);
+  color:rgb(35, 89, 207);
+  font-size: 25px;
+  border:none;
+  padding:10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
 }
