@@ -1,6 +1,12 @@
 import '../styles/decisions.css';
 
-export const Decisions = () => {
+export const Decisions = ({props}) => {
+
+
+    const addrestau = () =>{
+        props()
+    }
+
     return <>
         <div id="decisionscontainer">
             <h1 id="decisions">Decisions</h1>
@@ -23,7 +29,7 @@ export const Decisions = () => {
                 <button>High to low</button>
             </div>
 
-            <button id="newrestau">Add A Restaurant</button>
+            <button id="newrestau" onClick={addrestau}>Add A Restaurant</button>
 
         </div>
     </>

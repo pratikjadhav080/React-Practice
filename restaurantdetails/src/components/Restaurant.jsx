@@ -2,11 +2,17 @@ import { useState } from "react"
 import { Decisions } from "./Decisions";
 import '../styles/restaurant.css';
 import { Transaction } from "./Transactiontype";
+import { NewRestau } from "./NewRestauModal";
 const data = require('../data/restaurantdata.json');
 
 export const Restaurant = () => {
-    
+
+    const [modal, setModal] = useState(false)
     const [dish, setDish] = useState(data)
+
+    const showModal = () => {
+        setModal(!modal)
+    }
 
     const dishList = dish.map((e) => {
         return (
@@ -22,7 +28,7 @@ export const Restaurant = () => {
                     <p className="similar">{e.categories.join(", ")}</p>
                     <p className="similar">Cost ₹{e.cost_for_two} for one</p>
                     <p className="similarfont">Min ₹{e.cost_for_one} &#8194; <span> &#8226; Up to {e.time} min</span> </p>
-                    <Transaction prop={e.payment_methods}/>
+                    <Transaction prop={e.payment_methods} />
                 </div>
 
                 <div id="feedback" className="items">
@@ -44,16 +50,20 @@ export const Restaurant = () => {
     })
 
     return (
-        <div className="outsidecontainer">
+        <>
+            <div className="outsidecontainer" style={{ filter: modal ? "blur(5px)" : "blur(0px)" }}>
 
-            <Decisions className="outsideitem" />
-            
-            <div class="vl outsideitem"></div>
+                <Decisions className="outsideitem" props={showModal} />
 
-            <div className="insidecontainer outsideitem">
-                {dishList}
+                <div class="vl outsideitem"></div>
+
+                <div className="insidecontainer outsideitem">
+                    {dishList}
+                </div>
             </div>
 
-        </div>
+            {modal ? <NewRestau props={showModal} /> : ""}
+        </>
+
     )
 }

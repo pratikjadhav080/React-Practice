@@ -1,0 +1,38 @@
+#modalBox {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#modal-info {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  width: 40%;
+  margin: 100px auto;
+  border: 1px solid rgb(201, 201, 201);
+}
+
+#closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+
+#closeBtn:hover,
+#closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
