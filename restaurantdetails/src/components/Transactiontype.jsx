@@ -9,6 +9,6 @@ export const Transaction = ({prop}) => {
     }
 
     return <>
-        <p>Accepts {array.join(",")} payments {array.length>1?"":"only"}</p>
+        <p className="similarfont">Accepts {array.join(", ")} payments {array.length>1?"":"only"}</p>
     </>
 }

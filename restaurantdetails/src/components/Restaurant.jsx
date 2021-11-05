@@ -9,24 +9,42 @@ export const Restaurant = () => {
 
     const dishList = dish.map((e) => {
         return (
-            <div className="insideitems">
-                <h1>{e.title}</h1>
-                <img src={e.image}></img>
-                <h1 id="stars">{e.stars}</h1>
-                <p>{e.total_votes} votes</p>
-                <p>{e.reviews} reviews</p>
-                <p>{e.categories.join(",")}</p>
-                <p>Cost ₹{e.cost_for_two} for one</p>
-                <p>Min ₹{e.cost_for_one}</p>
-                <p>Up to {e.time} min</p>
-                <Transaction prop={e.payment_methods}/>
+
+            <div className="insideitems container">
+
+                <div className="items">
+                    <img src={e.image}></img>
+                </div>
+
+                <div id="dishdetails" className="items">
+                    <h1 id="title">{e.title}</h1>
+                    <p className="similar">{e.categories.join(", ")}</p>
+                    <p className="similar">Cost ₹{e.cost_for_two} for one</p>
+                    <p className="similarfont">Min ₹{e.cost_for_one} &#8194; <span> &#8226; Up to {e.time} min</span> </p>
+                    <Transaction prop={e.payment_methods}/>
+                </div>
+
+                <div id="feedback" className="items">
+                    <h1 id="stars">{e.stars}</h1>
+                    <p className="votes">{e.total_votes} votes</p>
+                    <p className="votes">{e.reviews} reviews</p>
+                </div>
+
+                <div id="orderdiv">
+                    <button id="orderbtn">Order Online</button>
+                </div>
+
             </div>
         )
     })
 
     return (
         <div className="outsidecontainer">
-            <Decisions className="outsideitem"/>
+
+            <Decisions className="outsideitem" />
+            
+            <div class="vl outsideitem"></div>
+
             <div className="insidecontainer outsideitem">
                 {dishList}
             </div>
