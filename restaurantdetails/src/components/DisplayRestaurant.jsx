@@ -15,8 +15,8 @@ export const DisplayRes = ({ props }) => {
                 <div id="dishdetails" className="items">
                     <h1 id="title">{e.title}</h1>
                     <p className="similar">{e.categories.join(", ")}</p>
-                    <p className="similar">Cost ₹{e.cost_for_two} for one</p>
-                    <p className="similarfont">Min ₹{e.cost_for_one} &#8194; <span> &#8226; Up to {e.time} min</span> </p>
+                    <p className="similar">Cost ₹{e.cost_for_two} for two</p>
+                    <p className="similarfont">Min ₹{e.cost_for_one} &#8194; <span> &#x25cf; Up to {e.time} min</span> </p>
                     <Transaction prop={e.payment_methods} />
                 </div>
 
