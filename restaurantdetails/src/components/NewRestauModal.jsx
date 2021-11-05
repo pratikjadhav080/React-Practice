@@ -3,7 +3,7 @@ import { IoMdClose } from 'react-icons/io';
 
 export const NewRestau = ({ props }) => {
 
-    const restaurantData = ["title", "image", "reviews", "total_votes", "cost_for_one", "stars", "cost_for_two", "time"]
+    const restaurantData = [["title",0], ["image",0], ["reviews",1], ["total_votes",1], ["cost_for_one",1], ["stars",1], ["cost_for_two",1], ["time",1]]
 
     const closeModal = () => {
         props()
@@ -23,11 +23,12 @@ export const NewRestau = ({ props }) => {
                             {restaurantData.map((e) => {
                                 return <div className="inputfields">
                                     <label>
-                                        {e.toUpperCase()}:<br />
-                                        <input type="text" name={e} />
+                                        {e[0].toUpperCase()}:<br />
+                                        <input type={e[1]?"number":"text"} name={e[0]} />
                                     </label><br />
                                 </div>
                             })}
+
                             <div id="paymentdiv">
                                 <p id="paymentmethod">PAYMENT METHOD :</p>
                                 <label>
@@ -44,7 +45,9 @@ export const NewRestau = ({ props }) => {
                                 </label>
                                 <br />
                             </div>
+
                             <input id="inputbtn" type="submit" value="Submit" disabled/>
+
                         </form>
                     </div>
                 </div>
