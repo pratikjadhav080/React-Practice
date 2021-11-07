@@ -13,6 +13,7 @@ export const Restaurant = () => {
 
 
     const addnewDish = (newDish) => {
+        
         setDish([...dish, newDish])
     }
 
