@@ -95,3 +95,7 @@ input[type=checkbox]{
   margin:20px 0px 40px 0px;
   transition: all 0.1s ease-in;
 }
+
+#inputbtn:active{
+  background-color: rgb(165, 171, 182);
+}

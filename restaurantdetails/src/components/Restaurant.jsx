@@ -9,32 +9,37 @@ export const Restaurant = () => {
 
     const [modal, setModal] = useState(false)
     const [dish, setDish] = useState(data)
-    const [ratingfilter,setRatingFilter] = useState([])
+    const [filter,setFilter] = useState([])
+
+
+    const addnewDish = (newDish) => {
+        setDish([...dish, newDish])
+    }
 
     const showModal = () => {
         setModal(!modal)
     }
 
     const aboverating = (rating) =>{
-        const newArray = dish.filter((e) => e.stars>rating).sort((a,b)=>a.stars-b.stars)
-        setRatingFilter(newArray)
+        const newArray = dish.filter((e) => Number(e.stars)>rating).sort((a,b)=>Number(a.stars)-Number(b.stars))
+        setFilter(newArray)
     }
 
     const paymentFilter = (item) =>{
         const newArray = dish.filter((e) => item==="all"?e.payment_methods.card&&e.payment_methods.cash&&e.payment_methods.upi:e.payment_methods[item])
-        setRatingFilter(newArray)
+        setFilter(newArray)
     }
 
     const sortFilter = (item) =>{
 
         const a = [...dish]
 
-        const newArray = a.sort((a,b)=> item===1?a.cost_for_two-b.cost_for_two:b.cost_for_two-a.cost_for_two)
-        setRatingFilter(newArray)
+        const newArray = a.sort((a,b)=> item===1? Number(a.cost_for_two)-Number(b.cost_for_two) : Number(b.cost_for_two)-Number(a.cost_for_two))
+        setFilter(newArray)
     }
 
 
-    const list = ratingfilter.length?ratingfilter:dish
+    const list = filter.length?filter:dish
 
     return (
         <>
@@ -42,13 +47,13 @@ export const Restaurant = () => {
 
                 <Decisions className="outsideitem" props={showModal} rate={aboverating} paytype={paymentFilter} sorted={sortFilter}/>
 
-                <div class="vl outsideitem"></div>
+                <div className="vl outsideitem"></div>
 
                 <DisplayRes props = {list}/>
 
             </div>
 
-            {modal ? <NewRestau props={showModal} /> : ""}
+            {modal ? <NewRestau props={showModal} addData={addnewDish} /> : ""}
         </>
 
     )

@@ -1,6 +1,6 @@
 import '../styles/decisions.css';
 
-export const Decisions = ({ props, rate, paytype,sorted}) => {
+export const Decisions = ({ props, rate, paytype, sorted}) => {
 
     const stars = [4, 3, 2, 1]
     const paymenttypes = ["cash", "card", "all"]
