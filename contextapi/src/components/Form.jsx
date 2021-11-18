@@ -1,13 +1,15 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../contexts/AuthContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 import { Userstatus } from "./UserStatus";
+import {MyForm} from "./custom/Mystyles"
 const axios = require('axios')
 
 export const Form = () => {
 
     const [text, setText] = useState({})
     const { isAuth, toggleAuth } = useContext(AuthContext)
-
+    const {mytheme} = useContext(ThemeContext)
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -30,15 +32,15 @@ export const Form = () => {
     }
 
     if (!isAuth) {
-
         return (
             <>
             <h1>Enter your details and submit</h1>
-                <form onSubmit={signin}>
+                <MyForm onSubmit={signin} my={mytheme}>
+                    <h1>This is my form</h1>
                     <input type="email" value={text.email} onChange={handleChange} name="email"></input>
                     <input type="password" value={text.password} onChange={handleChange} name="password"></input>
                     <input type="submit" value="Submit"></input>
-                </form>
+                </MyForm>
             </>
         )
     }
