@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Pineapple - Golden",
+      "price": "$3.67"
+    },
+    {
+      "id": 2,
+      "name": "Monkfish - Fresh",
+      "price": "$3.87"
+    },
+    {
+      "id": 3,
+      "name": "Chocolate - White",
+      "price": "$2.31"
+    },
+    {
+      "id": 4,
+      "name": "Wine - Shiraz South Eastern",
+      "price": "$3.62"
+    },
+    {
+      "id": 5,
+      "name": "Beer - Upper Canada Lager",
+      "price": "$3.43"
+    },
+    {
+      "id": 6,
+      "name": "Tobasco Sauce",
+      "price": "$2.96"
+    },
+    {
+      "id": 7,
+      "name": "Carroway Seed",
+      "price": "$1.16"
+    },
+    {
+      "id": 8,
+      "name": "Chips - Potato Jalapeno",
+      "price": "$3.00"
+    },
+    {
+      "id": 9,
+      "name": "Beef - Prime Rib Aaa",
+      "price": "$4.29"
+    },
+    {
+      "id": 10,
+      "name": "Quinoa",
+      "price": "$4.89"
+    }
+  ]
+}
