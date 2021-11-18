@@ -17,8 +17,10 @@ export const Navbar = () => {
                 setShowform(false)
                 toggleAuth("")
             }}>Logout</button>
+            
+            
 
-            {showform ? <Form /> : ""}
+            {showform ? <Form /> : <h1>Kindly click on Login button</h1>}
         </>
     )
 }
