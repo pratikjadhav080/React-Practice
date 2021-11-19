@@ -51,6 +51,7 @@ export const ActiveUsers = () => {
         <div>
             <p id="dashboard" style={{color:isDarkMode?"#FFFFFF":"#31394D"}}>My Dashboard</p>
             <p id="mode" style={{color:isDarkMode?"#FFFFFF":"#31394D"}}>{isDarkMode?"Dark":"Light"} Mode</p>
+            
             <FormGroup id="switchbtn" >
                 <FormControlLabel
                 label=""
