@@ -1,0 +1,85 @@
+/* <img id="bucket" src="bucket.svg" alt=""/>
+<img id="msg" src="msg.svg" alt=""/>
+<img id="pages" src="pages.svg" alt=""/>
+<img id="setting" src="setting.svg" alt=""/>
+<img id="Maps" src="Maps.svg" alt=""/>
+<img id="Stats" src="Stats.svg" alt=""/>
+<img id="User" src="User.svg" alt=""/>
+<img id="Bg" src="Bg.svg" alt=""/> */
+
+#User{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 22px;
+    top: 35px;
+}
+
+#Stats{
+    position: absolute;
+    height: 70px;
+    width: 96px;
+    left: 0px;
+    top: 300px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #679CF6 0%, #4072EE 100%);
+    border-radius: 5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#statsimage{
+    margin: 20px;
+}
+
+#Maps{
+    position: absolute;
+    height: 24px;
+    width: 20.5px;
+    left: 30.08349609375px;
+    top: 393px;
+    border-radius: 0px;       
+}
+
+#bucket{
+    position: absolute;
+    height: 19.68692398071289px;
+    width: 23.510204315185547px;
+    left: 29.32666015625px;
+    top: 466.3130798339844px;
+    border-radius: 0px;
+}
+
+#msg{
+    position: absolute;
+    height: 20.635000228881836px;
+    width: 23.510204315185547px;
+    left: 29.32666015625px;
+    top: 536.3300018310547px;
+    border-radius: 0px;
+}
+
+#pages{
+    position: absolute;
+    height: 23.510204315185547px;
+    width: 17.513513565063477px;
+    left: 32.324462890625px;
+    top: 606.00048828125px;
+    border-radius: 0px;
+}
+
+#setting{
+    position: absolute;
+    height: 23.50848960876465px;
+    width: 22.584630966186523px;
+    left: 29.2886962890625px;
+    top: 677.002197265625px;
+    border-radius: 0px;
+}
+
+#Bg{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 22px;
+    top: 960px;
+}
