@@ -1,23 +1,28 @@
 {
   "todos": [
     {
-      "id": "pAke",
-      "title": "PRatik",
-      "status": false
-    },
-    {
-      "id": "9v_6",
-      "title": "deepak",
-      "status": false
-    },
-    {
       "id": "a3Pc",
-      "title": "Pratik2",
+      "title": "Pratik4",
       "status": false
     },
     {
-      "id": "6xuD",
-      "title": "react redux",
+      "id": "KM_v",
+      "title": "Hello",
+      "status": false
+    },
+    {
+      "id": "QtsZ",
+      "title": "My name is Pratik Jadhav",
+      "status": true
+    },
+    {
+      "id": "nkRa",
+      "title": "CX means CX",
+      "status": false
+    },
+    {
+      "id": "W9jU",
+      "title": "Redux assingnment",
       "status": false
     }
   ]

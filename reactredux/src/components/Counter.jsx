@@ -1,6 +1,6 @@
-import { Actions } from '../Store/actions';
-import { DEC_COUNT, INC_COUNT } from '../Store/actionTypes';
 import { useDispatch, useSelector } from 'react-redux';
+import { DEC_COUNT, INC_COUNT } from '../Store/CounterStore/actionTypes';
+import { Actions } from '../Store/CounterStore/actions';
 
 //useDispatch in react-redux is equivalent to store.dispatch from Redux
 
@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from 'react-redux';
 export const Counter = () => {
 
     const dispatch = useDispatch();
-    const count = useSelector(store=>store.count);
+    const count = useSelector(store=>store.counter.count);
 
     return <div>
         <h1>Counter:{count}</h1>
