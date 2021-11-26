@@ -30,7 +30,7 @@ export const Todo = () => {
     }
 
     const getData = async () => {
-        getToDo();
+        dispatch(getToDo());
     }
 
     const addTolist = async () => {
