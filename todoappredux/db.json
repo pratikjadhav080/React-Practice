@@ -2,18 +2,8 @@
   "todos": [
     {
       "id": "NAa0",
-      "title": "netflix",
+      "title": "pictures",
       "status": true
-    },
-    {
-      "id": "iB2G",
-      "title": "india",
-      "status": false
-    },
-    {
-      "id": "Onb0",
-      "title": "pen",
-      "status": false
     }
   ]
 }
