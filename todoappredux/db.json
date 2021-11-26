@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": "cD23",
+      "title": "React-Redux",
+      "status": false
+    },
+    {
+      "id": "WOcm",
+      "title": "Make breakfast",
+      "status": true
+    },
+    {
+      "id": "57e3",
+      "title": "to chapatis",
+      "status": true
+    }
+  ]
+}
