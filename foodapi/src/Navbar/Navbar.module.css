@@ -1,0 +1,14 @@
+.navbar{
+    background-color: #FAD02C;
+    padding:20px;
+    color: black;
+}
+
+.navbar>h1{
+    transition:all 0.5s;
+}
+
+.navbar>h1:hover{
+    color:white;
+    cursor: pointer;
+}

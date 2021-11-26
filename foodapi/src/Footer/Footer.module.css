@@ -1,0 +1,36 @@
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FAD02C;
+    text-align: center;
+}
+
+.footer_container{
+    display: grid;
+    width:1200px;
+    margin:auto;
+    grid-template-columns: auto auto auto;
+    padding:30px 0px;
+}
+
+.footer_container>div{
+    display: flex;
+    align-items: center;
+}
+
+.footer_container>div:nth-child(2){
+    justify-content: center;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+}
+
+.footer_container>div:nth-child(3){
+    justify-content: flex-end;
+}
+
+.footer_container>div:nth-child(3) img{
+    margin-left: 10px;
+}
