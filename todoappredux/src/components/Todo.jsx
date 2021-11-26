@@ -1,8 +1,8 @@
-import { Actions } from '../Store/TodoStore/actions';
+import { Actions, getToDo } from '../Store/TodoStore/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid'
-import { ADD_TODO_ERROR, ADD_TODO_LOADING, ADD_TODO_SUCCESS, DELETE_TODO_ERROR, DELETE_TODO_LOADING, DELETE_TODO_SUCCESS, GET_TODO_ERROR, GET_TODO_LOADING, GET_TODO_SUCCESS, TOTAL_NONCOMPLETED, UPDATE_TODO_ERROR, UPDATE_TODO_LOADING, UPDATE_TODO_SUCCESS } from '../Store/TodoStore/actionTypes';
+import { ADD_TODO_ERROR, ADD_TODO_LOADING, ADD_TODO_SUCCESS, DELETE_TODO_ERROR, DELETE_TODO_LOADING, DELETE_TODO_SUCCESS, UPDATE_TODO_ERROR, UPDATE_TODO_LOADING, UPDATE_TODO_SUCCESS } from '../Store/TodoStore/actionTypes';
 import { EditTodo } from './EditTodo';
 import axios from 'axios';
 import styles from "./Todo.module.css"
@@ -30,21 +30,7 @@ export const Todo = () => {
     }
 
     const getData = async () => {
-        dispatch(Actions(GET_TODO_LOADING, ""))
-
-        try {
-            const res = await axios.get("http://localhost:3004/todos")
-            dispatch(Actions(GET_TODO_SUCCESS, res.data))
-
-            const c = res.data.filter((e)=>{
-                return e.status===false
-            }).length
-
-            dispatch(Actions(TOTAL_NONCOMPLETED, c))
-
-        } catch (err) {
-            dispatch(Actions(GET_TODO_ERROR, err))
-        }
+        getToDo();
     }
 
     const addTolist = async () => {

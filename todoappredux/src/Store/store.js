@@ -1,15 +1,13 @@
 import {createStore, applyMiddleware, compose} from "redux"
 import { todoReducer } from "./TodoStore/reducer";
 
-// const rootReducer = combineReducers({
-//     todo:todoReducer,
-//     counter:countReducer
-// })
-
 const middleware1 = (store) => (next) => (action) => {
-    //console.log("middleware1",action.type)
-    next(action)
-    //console.log("middleware1 exit")
+
+    if(typeof action==="function"){
+        action(store.dispatch)
+    }else{
+        next(action)
+    }
 }
 
 const middleware2 = (store) => (next) => (action) => {
