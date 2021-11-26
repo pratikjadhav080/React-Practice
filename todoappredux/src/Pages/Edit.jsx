@@ -1,10 +1,9 @@
-import axios from "axios"
+
 import { useEffect } from "react"
 import { useState } from "react"
 import { shallowEqual, useDispatch, useSelector } from "react-redux"
 import { useParams } from "react-router"
-import { Actions } from "../Store/TodoStore/actions"
-import { EDIT_TODO_ERROR, EDIT_TODO_LOADING, EDIT_TODO_SUCCESS } from "../Store/TodoStore/actionTypes"
+import { editToDo } from "../Store/TodoStore/actions"
 import { Link } from 'react-router-dom'
 
 
@@ -23,19 +22,23 @@ export const Edit = () => {
         })[0])
     }, [])
 
-
     const editTodo = async (e) => {
 
-        dispatch(Actions(EDIT_TODO_LOADING, ""))
-
-        try {
-            const res = await axios.patch(`http://localhost:3004/todos/${e.id}`, { title: edit })
-            dispatch(Actions(EDIT_TODO_SUCCESS, res.data))
-        } catch (err) {
-            dispatch(Actions(EDIT_TODO_ERROR, err))
-        }
-
+        dispatch(editToDo(e,edit));
     }
+
+    // const editTodo = async (e) => {
+
+    //     dispatch(Actions(EDIT_TODO_LOADING, ""))
+
+    //     try {
+    //         const res = await axios.patch(`http://localhost:3004/todos/${e.id}`, { title: edit })
+    //         dispatch(Actions(EDIT_TODO_SUCCESS, res.data))
+    //     } catch (err) {
+    //         dispatch(Actions(EDIT_TODO_ERROR, err))
+    //     }
+
+    // }
 
 
     return <>

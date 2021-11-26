@@ -1,18 +1,18 @@
 {
   "todos": [
     {
-      "id": "cD23",
-      "title": "edit hi karra hu kabse",
-      "status": false
-    },
-    {
-      "id": "57e3",
-      "title": "to chapatis",
+      "id": "NAa0",
+      "title": "netflix",
       "status": true
     },
     {
-      "id": "Vq-m",
-      "title": "reeact-redux",
+      "id": "iB2G",
+      "title": "india",
+      "status": false
+    },
+    {
+      "id": "Onb0",
+      "title": "pen",
       "status": false
     }
   ]

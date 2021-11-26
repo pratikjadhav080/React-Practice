@@ -1,5 +1,6 @@
 import axios from 'axios';
-import { GET_TODO_ERROR, GET_TODO_LOADING, GET_TODO_SUCCESS, TOTAL_NONCOMPLETED } from './actionTypes';
+import { ADD_TODO_ERROR, ADD_TODO_LOADING, ADD_TODO_SUCCESS, DELETE_TODO_ERROR, DELETE_TODO_LOADING, DELETE_TODO_SUCCESS, EDIT_TODO_ERROR, EDIT_TODO_LOADING, EDIT_TODO_SUCCESS, GET_TODO_ERROR, GET_TODO_LOADING, GET_TODO_SUCCESS, TOTAL_NONCOMPLETED, UPDATE_TODO_ERROR, UPDATE_TODO_LOADING, UPDATE_TODO_SUCCESS } from './actionTypes';
+import { nanoid } from 'nanoid'
 
 export const Actions = (action, Data) => {
     return {
@@ -26,3 +27,82 @@ export const getToDo = () => async (dispatch) => {
         dispatch(Actions(GET_TODO_ERROR, err))
     }
 }
+
+export const addToDo = (todo) => async (dispatch) => {
+
+    dispatch(Actions(ADD_TODO_LOADING, ""))
+
+    const payload = {
+        id: nanoid(4),
+        title: todo,
+        status: false
+    }
+
+    try {
+        const res = await axios.post("http://localhost:3004/todos", payload)
+        dispatch(Actions(ADD_TODO_SUCCESS, res.data))
+        dispatch(getToDo());
+    } catch (err) {
+        dispatch(Actions(ADD_TODO_ERROR, err))
+    }
+}
+
+export const toggleToDo = (e,toSetCurrentData) => async (dispatch) => {
+
+    dispatch(Actions(UPDATE_TODO_LOADING, ""))
+
+    try {
+        const res = await axios.patch(`http://localhost:3004/todos/${e.id}`, { status: !e.status })
+        dispatch(Actions(UPDATE_TODO_SUCCESS, res.data))
+       
+        if(toSetCurrentData){
+            toSetCurrentData(res.data)
+        }else{
+            dispatch(getToDo());
+        }
+
+    } catch (err) {
+        dispatch(Actions(UPDATE_TODO_ERROR, err))
+    }
+
+}
+
+export const deleteToDo = (e,toSetFlag) => async (dispatch) => {
+
+    dispatch(Actions(DELETE_TODO_LOADING, ""))
+
+    try {
+        const res = await axios.delete(`http://localhost:3004/todos/${e.id}`)
+        dispatch(Actions(DELETE_TODO_SUCCESS, res.data))
+
+        if(toSetFlag){
+            toSetFlag()
+        }else{
+            dispatch(getToDo());
+        }
+
+    } catch (err) {
+        dispatch(Actions(DELETE_TODO_ERROR, err))
+    }
+
+}
+
+export const editToDo = (e,edit,closeModal) => async (dispatch) => {
+
+    dispatch(Actions(EDIT_TODO_LOADING, ""))
+
+    try {
+        const res = await axios.patch(`http://localhost:3004/todos/${e.id}`, { title: edit})
+        dispatch(Actions(EDIT_TODO_SUCCESS, res.data))
+
+        if(closeModal){
+            dispatch(getToDo());
+            closeModal()
+        }
+
+    } catch (err) {
+        dispatch(Actions(EDIT_TODO_ERROR, err))
+    }
+
+}
+

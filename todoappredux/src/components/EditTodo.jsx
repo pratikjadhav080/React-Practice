@@ -1,19 +1,13 @@
 import { useState } from "react"
 import { useDispatch } from 'react-redux';
-import { EDIT_TODO_ERROR, EDIT_TODO_LOADING, EDIT_TODO_SUCCESS } from "../Store/TodoStore/actionTypes"
-import axios from "axios"
-import { Actions } from '../Store/TodoStore/actions';
+import { editToDo } from '../Store/TodoStore/actions';
 import { IoMdClose } from 'react-icons/io';
 import styles from "./Edit.module.css"
 
-export const EditTodo = ({props,getdata,data}) =>{
+export const EditTodo = ({props,data}) =>{
 
     const [edit,setEdit] = useState("")
     const dispatch = useDispatch();
-
-    const gettingData = ()=>{
-        getdata()
-    }
 
     const closeModal = () => {
         props()
@@ -21,16 +15,18 @@ export const EditTodo = ({props,getdata,data}) =>{
 
     const editTodo = async (e) => {
 
-        dispatch(Actions(EDIT_TODO_LOADING, ""))
+        dispatch(editToDo(e,edit,closeModal));
 
-        try {
-            const res = await axios.patch(`http://localhost:3004/todos/${e.id}`, { title: edit})
-            dispatch(Actions(EDIT_TODO_SUCCESS, res.data))
-            gettingData();
-            closeModal()
-        } catch (err) {
-            dispatch(Actions(EDIT_TODO_ERROR, err))
-        }
+        // dispatch(Actions(EDIT_TODO_LOADING, ""))
+
+        // try {
+        //     const res = await axios.patch(`http://localhost:3004/todos/${e.id}`, { title: edit})
+        //     dispatch(Actions(EDIT_TODO_SUCCESS, res.data))
+        //     gettingData();
+        //     closeModal()
+        // } catch (err) {
+        //     dispatch(Actions(EDIT_TODO_ERROR, err))
+        // }
 
     }
 
