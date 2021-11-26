@@ -1,5 +1,5 @@
 import { Actions, getToDo } from '../Store/TodoStore/actions';
-import { useDispatch, useSelector } from 'react-redux';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid'
 import { ADD_TODO_ERROR, ADD_TODO_LOADING, ADD_TODO_SUCCESS, DELETE_TODO_ERROR, DELETE_TODO_LOADING, DELETE_TODO_SUCCESS, UPDATE_TODO_ERROR, UPDATE_TODO_LOADING, UPDATE_TODO_SUCCESS } from '../Store/TodoStore/actionTypes';
@@ -15,11 +15,15 @@ export const Todo = () => {
     const [datainmodal, setDatainmodal] = useState({})
     const [todo, setTodo] = useState("");
     const dispatch = useDispatch();
-    const { count,loading, data, error } = useSelector(store => store.todos);
+    const { count,loading, data, error } = useSelector(store => store.todos,shallowEqual);
 
     useEffect(() => {
         getData()
     }, [])
+
+    const getData = async () => {
+        dispatch(getToDo());
+    }
 
     const showModal = () => {
         setModal(!modal)
@@ -27,10 +31,6 @@ export const Todo = () => {
 
     const setDataforEditing = (data) => {
         setDatainmodal(data)
-    }
-
-    const getData = async () => {
-        dispatch(getToDo());
     }
 
     const addTolist = async () => {

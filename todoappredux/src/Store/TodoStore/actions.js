@@ -8,8 +8,8 @@ export const Actions = (action, Data) => {
     }
 }
 
-
 export const getToDo = () => async (dispatch) => {
+
     dispatch(Actions(GET_TODO_LOADING, ""))
 
     try {

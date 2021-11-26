@@ -2,18 +2,18 @@
   "todos": [
     {
       "id": "cD23",
-      "title": "React-Redux",
+      "title": "edit hi karra hu kabse",
       "status": false
-    },
-    {
-      "id": "WOcm",
-      "title": "Make breakfast",
-      "status": true
     },
     {
       "id": "57e3",
       "title": "to chapatis",
       "status": true
+    },
+    {
+      "id": "Vq-m",
+      "title": "reeact-redux",
+      "status": false
     }
   ]
 }

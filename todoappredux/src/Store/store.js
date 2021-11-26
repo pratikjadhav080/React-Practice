@@ -1,20 +1,18 @@
 import {createStore, applyMiddleware, compose} from "redux"
+import thunk from "redux-thunk";
 import { todoReducer } from "./TodoStore/reducer";
 
-const middleware1 = (store) => (next) => (action) => {
 
-    if(typeof action==="function"){
-        action(store.dispatch)
-    }else{
-        next(action)
-    }
-}
+//thunk in createstore is basically acting as the middleware given below handling all the stuff 
 
-const middleware2 = (store) => (next) => (action) => {
-    //console.log("middleware2",action.type)
-    next(action)
-    //console.log("middleware2 exit")
-}
+// const middleware1 = (store) => (next) => (action) => {
+
+//     if(typeof action==="function"){
+//         action(store.dispatch)
+//     }else{
+//         next(action)
+//     }
+// }
 
 
 //above middleware is same as below one
@@ -28,9 +26,11 @@ const middleware2 = (store) => (next) => (action) => {
 // }
 
 
+
+
 export const store = createStore(
     todoReducer,
-    compose(applyMiddleware(middleware1,middleware2),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+    compose(applyMiddleware(thunk),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
     );
 
     // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

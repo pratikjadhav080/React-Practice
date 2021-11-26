@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router"
 import axios from 'axios';
 import { DELETE_TODO_ERROR, DELETE_TODO_LOADING, DELETE_TODO_SUCCESS, UPDATE_TODO_ERROR, UPDATE_TODO_LOADING, UPDATE_TODO_SUCCESS } from "../Store/TodoStore/actionTypes";
@@ -11,7 +11,7 @@ export const IndividualPost = () => {
 
     const obj = useParams();
     const dispatch = useDispatch();
-    const { data } = useSelector(store => store.todos);
+    const { data } = useSelector(store => store.todos,shallowEqual);
     const [currentData, setCurrentdata] = useState({})
     const [deleteflag, setDeleteflag] = useState(false)
 
