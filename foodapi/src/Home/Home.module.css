@@ -1,5 +1,5 @@
 .home{
-    padding-top: 100px;
+    padding: 100px 0px;
 }
 
 .home>button{
@@ -32,3 +32,13 @@
 .home>input::placeholder{
     font-family: 'Poppins', sans-serif;
 }
+
+
+.dishContainer{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap; 
+}
+

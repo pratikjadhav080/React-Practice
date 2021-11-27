@@ -1,6 +1,6 @@
 import { useState } from "react"
 import axios from 'axios';
-import { Dishecards } from "../DishCard/Dishcard";
+import { Dishcards } from "../DishCard/Dishcard";
 import styles from "./Home.module.css"
 
 export const Home = () => {
@@ -24,13 +24,17 @@ export const Home = () => {
         } else {
             setDishes(meals)
         }
+
+        setDishname("")
     }
 
     return <div className={styles.home}>
         <input type="text" value={dishname} onChange={(e) => setDishname(e.target.value)} placeholder="Enter the dish name" />
         <button onClick={FindDishes}>Search</button>
-        <div>
-            {dishes.length > 0 ? <Dishecards props={dishes} /> : noDish ? "No Such Meal Available !!!" : ""}
+
+        <div className={styles.dishContainer}>
+            {dishes.length > 0 ? <Dishcards props={dishes} /> : noDish ? "No Such Meal Available !!!" : ""}
         </div>
+
     </div>
 }
