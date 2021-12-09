@@ -16,7 +16,7 @@ export const Counter = () => {
         }, 1000)
     }
 
-    return <div>
+    return <div >
         <div>Timer: {counter}</div>
         <button onClick={() => {
             clearInterval(currentRef.current)
