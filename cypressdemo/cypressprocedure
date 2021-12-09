@@ -1,0 +1,4 @@
+1. install cypress as dev deps
+2. cypress / integrations folder structure
+3. /// <reference types="Cypress" /> in integration test file
+4. add "plugin:cypress/recommended" in eslint in package.json
