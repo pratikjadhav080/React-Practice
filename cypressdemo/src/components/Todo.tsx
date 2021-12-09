@@ -8,6 +8,7 @@ export const Todo = () => {
     return (
         <div>
             <input
+                className="addtodo"
                 data-testid="inputbox"
                 type="text"
                 placeholder="Enter Todo"
