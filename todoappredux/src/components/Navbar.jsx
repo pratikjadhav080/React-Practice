@@ -1,14 +1,14 @@
 import styles from "./navbar.module.css"
-import { Link, Redirect } from 'react-router-dom'
-import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom'
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { logoutUser } from '../Store/AuthStore/action';
 
 export const Navbar = () => {
     const dispatch = useDispatch();
+    const {isAuth} = useSelector(store => store.auth,shallowEqual)
 
     const logout = ()=>{
         dispatch(logoutUser())
-        // return <Redirect to="/"/>
     }
 
     return <div className={styles.navbar}>
@@ -22,7 +22,8 @@ export const Navbar = () => {
             <h1>TODO</h1>
         </Link>
 
-        <button className={styles.btn} onClick={logout}>LOGOUT</button>
 
+        {isAuth?<button className={styles.btn} onClick={logout}>LOGOUT</button>:""}
+        
     </div>
 }
