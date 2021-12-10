@@ -33,6 +33,10 @@ export const Registration = () => {
     }
 
 
+    if (registered) {
+        return <Redirect to="/login" />
+    }
+
     return <>
         {
             error ? <h1>You are already A User, Please click on the login Tab</h1> :
