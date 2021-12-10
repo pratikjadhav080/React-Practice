@@ -1,18 +1,13 @@
 {
   "todos": [
     {
-      "id": "NAa0",
-      "title": "i dont understand",
+      "id": "aGiE",
+      "title": "no hello",
       "status": true
     },
     {
-      "id": "6Ggu",
-      "title": "change yourself",
-      "status": false
-    },
-    {
-      "id": "aGiE",
-      "title": "hello hi ",
+      "id": "bMG3",
+      "title": "adding another todo",
       "status": false
     }
   ]
