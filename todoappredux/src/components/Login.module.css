@@ -1,12 +1,12 @@
 .login input{
     outline: none;
     border:none;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     width:200px;
     padding:10px;
     margin-bottom: 10px;
-    font-size: 14px;
-    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 .login input:active{
@@ -14,8 +14,9 @@
 }
 
 .btn{
-    background-color: #FFE300;
+    background-color: #ffa600;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 20px;
 }
