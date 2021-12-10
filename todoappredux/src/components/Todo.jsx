@@ -3,7 +3,7 @@ import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { EditTodo } from './EditTodo';
 import styles from "./Todo.module.css"
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { Total } from './Total';
 
 export const Todo = () => {
@@ -13,10 +13,23 @@ export const Todo = () => {
     const [todo, setTodo] = useState("");
     const dispatch = useDispatch();
     const { count,loading, data, error } = useSelector(store => store.todo.todos,shallowEqual);
+    const {isAuth} = useSelector(store => store.auth,shallowEqual)
+    const history = useHistory();
+
+    console.log(isAuth)
 
     useEffect(() => {
-        getData()
-    }, [])
+        if (!isAuth) {
+            history.push("/login")
+        }else{
+            getData()
+        }
+    }, [isAuth])
+
+
+    // useEffect(() => {
+    //     getData()
+    // }, [])
 
     const showModal = () => {
         setModal(!modal)

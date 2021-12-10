@@ -1,8 +1,17 @@
-import '../styles/navbar.css'
-import { Link } from 'react-router-dom'
+import styles from "./navbar.module.css"
+import { Link, Redirect } from 'react-router-dom'
+import { useDispatch } from 'react-redux';
+import { logoutUser } from '../Store/AuthStore/action';
 
 export const Navbar = () => {
-    return <div id="navbar">
+    const dispatch = useDispatch();
+
+    const logout = ()=>{
+        dispatch(logoutUser())
+        // return <Redirect to="/"/>
+    }
+
+    return <div className={styles.navbar}>
         <Link to="/">
             <h1>Home</h1>
         </Link>
@@ -12,5 +21,8 @@ export const Navbar = () => {
         <Link to="/todo">
             <h1>TODO</h1>
         </Link>
+
+        <button className={styles.btn} onClick={logout}>LOGOUT</button>
+
     </div>
 }

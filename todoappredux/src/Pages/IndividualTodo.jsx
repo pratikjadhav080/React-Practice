@@ -71,8 +71,8 @@ export const IndividualPost = () => {
         {deleteflag?<h1>"Successfully Deleted"</h1>:<button onClick={() => deleteTask(currentData)}>Delete</button>}
 
         
-        <Link to="/">
-            <button>Home</button>
+        <Link to="/todo">
+            <button>BACK TO YOUR TODO</button>
         </Link>
     </>
 }

@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(26, 126, 129);
+    margin-bottom: 20px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar a:hover{
+    color:lightcoral;
+}
+
+.btn{
+    width:120px;
+    height:50px;
+    border:none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(211, 130, 25);
+    cursor: pointer;
+}

@@ -2,13 +2,8 @@
   "todos": [
     {
       "id": "aGiE",
-      "title": "no hello",
+      "title": "hi hello ji",
       "status": true
-    },
-    {
-      "id": "bMG3",
-      "title": "adding another todo",
-      "status": false
     }
   ]
 }

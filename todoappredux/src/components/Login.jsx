@@ -1,6 +1,6 @@
 import styles from "./Login.module.css"
 import { useState } from "react"
-import { useDispatch, useSelector } from "react-redux";
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router"
 import { loginUser } from "../Store/AuthStore/action";
 
@@ -8,7 +8,7 @@ import { loginUser } from "../Store/AuthStore/action";
 export const Login = () => {
 
     const dispatch = useDispatch();
-    const {isAuth} = useSelector(store => store.auth)
+    const {isAuth} = useSelector(store => store.auth,shallowEqual)
 
     const [loginData, setLoginData] = useState({
         email: "",

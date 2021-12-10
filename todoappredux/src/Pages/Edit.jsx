@@ -12,7 +12,7 @@ export const Edit = () => {
     const [edit, setEdit] = useState("")
     const dispatch = useDispatch();
     const obj = useParams();
-    const { data } = useSelector(store => store.todo.todos,shallowEqual);
+    const { data } = useSelector(store => store.todo.todos, shallowEqual);
     const [currentData, setCurrentdata] = useState({})
     const [flag, setFlag] = useState(false)
 
@@ -24,7 +24,7 @@ export const Edit = () => {
 
     const editTodo = async (e) => {
 
-        dispatch(editToDo(e,edit));
+        dispatch(editToDo(e, edit));
     }
 
     // const editTodo = async (e) => {
@@ -44,8 +44,8 @@ export const Edit = () => {
     return <>
         {flag ? <>
             <h1>"Successfully Edited" </h1>
-            <Link to="/">
-                <button>Home</button>
+            <Link to="/todo">
+                <button>BACK TO YOUR TODO</button>
             </Link>
         </>
             : <>
