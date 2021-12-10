@@ -5,13 +5,14 @@
  */
 
 
+import { loadData, saveData } from "../../utils/localStorage";
 import { ADD_TODO_ERROR, ADD_TODO_LOADING, ADD_TODO_SUCCESS, DELETE_TODO_ERROR, DELETE_TODO_LOADING, DELETE_TODO_SUCCESS, EDIT_TODO_ERROR, EDIT_TODO_LOADING, EDIT_TODO_SUCCESS, GET_TODO_ERROR, GET_TODO_LOADING, GET_TODO_SUCCESS, TOTAL_NONCOMPLETED, UPDATE_TODO_ERROR, UPDATE_TODO_LOADING, UPDATE_TODO_SUCCESS } from "./actionTypes";
 
 const initState = {
     todos: {
         count: 0,
         loading: false,
-        data: [],
+        data: loadData("todos")|| [],
         error: false
     }
 }
@@ -59,6 +60,7 @@ export const todoReducer = (state = initState, { type, payload }) => { //store 1
             }
 
         case GET_TODO_SUCCESS:
+            saveData("todos",payload)
             return {
                 ...state,
                 todos: {
@@ -94,6 +96,8 @@ export const todoReducer = (state = initState, { type, payload }) => { //store 1
                 return e.id === payload.id ? { ...e, status: !e.status } : e
             })
 
+            saveData("todos",new_data)
+
             return {
                 ...state,
                 todos: {
@@ -128,6 +132,8 @@ export const todoReducer = (state = initState, { type, payload }) => { //store 1
                 return e.id !== payload.id
             })
 
+            saveData("todos",dataAfterDeletion)
+
             return {
                 ...state,
                 todos: {
@@ -161,6 +167,8 @@ export const todoReducer = (state = initState, { type, payload }) => { //store 1
             const dataAfterEditing = state.todos.data.map((e) => {
                 return e.id === payload.id ? { ...e, title: payload.title } : e
             })
+
+            saveData("todos",dataAfterEditing)
 
             return {
                 ...state,

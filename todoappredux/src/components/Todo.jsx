@@ -12,7 +12,7 @@ export const Todo = () => {
     const [datainmodal, setDatainmodal] = useState({})
     const [todo, setTodo] = useState("");
     const dispatch = useDispatch();
-    const { count,loading, data, error } = useSelector(store => store.todos,shallowEqual);
+    const { count,loading, data, error } = useSelector(store => store.todo.todos,shallowEqual);
 
     useEffect(() => {
         getData()

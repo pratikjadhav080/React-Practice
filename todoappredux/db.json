@@ -2,8 +2,18 @@
   "todos": [
     {
       "id": "NAa0",
-      "title": "pictures",
+      "title": "i dont understand",
       "status": true
+    },
+    {
+      "id": "6Ggu",
+      "title": "change yourself",
+      "status": false
+    },
+    {
+      "id": "aGiE",
+      "title": "hello hi ",
+      "status": false
     }
   ]
 }

@@ -1,5 +1,6 @@
-import {createStore, applyMiddleware, compose} from "redux"
+import {createStore, applyMiddleware, compose,combineReducers} from "redux"
 import thunk from "redux-thunk";
+import { authReducer } from "./AuthStore/reducer";
 import { todoReducer } from "./TodoStore/reducer";
 
 
@@ -26,11 +27,14 @@ import { todoReducer } from "./TodoStore/reducer";
 // }
 
 
+const rootReducer = combineReducers({
+    auth:authReducer,
+    todo:todoReducer
+})
+
 
 
 export const store = createStore(
-    todoReducer,
+    rootReducer,
     compose(applyMiddleware(thunk),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
     );
-
-    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

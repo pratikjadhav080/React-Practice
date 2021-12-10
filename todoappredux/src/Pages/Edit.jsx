@@ -12,7 +12,7 @@ export const Edit = () => {
     const [edit, setEdit] = useState("")
     const dispatch = useDispatch();
     const obj = useParams();
-    const { data } = useSelector(store => store.todos,shallowEqual);
+    const { data } = useSelector(store => store.todo.todos,shallowEqual);
     const [currentData, setCurrentdata] = useState({})
     const [flag, setFlag] = useState(false)
 

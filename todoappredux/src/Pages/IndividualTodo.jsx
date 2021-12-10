@@ -9,7 +9,7 @@ export const IndividualPost = () => {
 
     const obj = useParams();
     const dispatch = useDispatch();
-    const { data } = useSelector(store => store.todos,shallowEqual);
+    const { data } = useSelector(store => store.todo.todos,shallowEqual);
     const [currentData, setCurrentdata] = useState({})
     const [deleteflag, setDeleteflag] = useState(false)
 
