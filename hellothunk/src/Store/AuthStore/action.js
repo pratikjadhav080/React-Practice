@@ -13,7 +13,7 @@ export const Actions = (action, Data) => {
 export const loginUser = (loginData) => async (dispatch) => {
 
     try {
-        const res = await axios.post('https://reqres.in/api/login', loginData)
+        const res = await axios.post('https://masai-api-mocker.herokuapp.com/auth/login', loginData)
         console.log(res.data.token)
         dispatch(Actions(LOGIN_SUCCESS, res.data.token))
     } catch (err) {
