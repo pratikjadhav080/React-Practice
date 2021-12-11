@@ -1,5 +1,9 @@
-const Add = (a,b) =>{
+const Sum = (a,b) =>{
     return a+b
 }
 
-module.exports = Add
+const Sub = (a,b) =>{
+    return a-b
+}
+
+module.exports = {Sum,Sub}

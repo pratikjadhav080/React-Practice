@@ -1,16 +1,38 @@
 //test suit - collection of tests
 //tests..
-const Add = require("../index")
 
-test("addition of two positive numbers",function(){
-    expect(Add(1,2)).toBe(3)
-    expect(Add(2,2)).toBe(4)
-})
+const {Sum,Sub} = require("../index")
 
-test("addition of two negataive numbers",function(){
-    expect(Add(-1,-2)).toBe(-3)
-})
+describe("Addition", function () {
 
-test("addition of one postive one negataive number",function(){
-    expect(Add(-1,2)).toBe(1)
-})
+    test("addition of two positive numbers", function () {
+        expect(Sum(1, 2)).toBe(3)
+        expect(Sum(2, 2)).toBe(4)
+    })
+
+    test("addition of two negataive numbers", function () {
+        expect(Sum(-1, -2)).toBe(-3)
+    })
+
+    test("addition of one postive one negative number", function () {
+        expect(Sum(-1, 2)).toBe(1)
+    })
+
+});
+
+describe("Substraction", function () {
+
+    test("Substraction of two positive numbers", function () {
+        expect(Sub(1, 2)).toBe(-1)
+        expect(Sub(2, 2)).toBe(0)
+    })
+
+    test("Substraction of two negataive numbers", function () {
+        expect(Sub(-1, -2)).toBe(1)
+    })
+
+    test("Substraction of one postive one negative number", function () {
+        expect(Sub(-1, 2)).toBe(-3)
+    })
+
+});
