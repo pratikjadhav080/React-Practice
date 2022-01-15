@@ -67,6 +67,7 @@ export const todoReducer = (state = initState, { type, payload }) => { //store 1
                     ...state.todos,
                     loading: false,
                     data: payload,
+                    error: false,
                 },
             }
 
